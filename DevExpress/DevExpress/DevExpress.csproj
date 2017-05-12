@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A346B2B9-AAC2-4932-892B-8A20254EFC1D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevExpress</RootNamespace>
+    <AssemblyName>DevExpress</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.2.Reporting, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel.v9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChartEntities.cs" />
+    <Compile Include="Defter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Defter.Designer.cs">
+      <DependentUpon>Defter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DışarıdakiKitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DışarıdakiKitaplar.Designer.cs">
+      <DependentUpon>DışarıdakiKitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitap Rapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitap Rapor.Designer.cs">
+      <DependentUpon>Kitap Rapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kişi Rapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kişi Rapor.Designer.cs">
+      <DependentUpon>Kişi Rapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Rapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapor.Designer.cs">
+      <DependentUpon>Rapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapAlışVeriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapAlışVeriş.Designer.cs">
+      <DependentUpon>KitapAlışVeriş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitaplar.Designer.cs">
+      <DependentUpon>Kitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KutuphaneDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KutuphaneDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Menü.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menü.Designer.cs">
+      <DependentUpon>Menü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mevcut Kitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mevcut Kitaplar.Designer.cs">
+      <DependentUpon>Mevcut Kitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SifrenimiUnuttun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifrenimiUnuttun.Designer.cs">
+      <DependentUpon>SifrenimiUnuttun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UyeKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UyeKayit.Designer.cs">
+      <DependentUpon>UyeKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uyeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uyeler.Designer.cs">
+      <DependentUpon>Uyeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="v1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="v1.Designer.cs">
+      <DependentUpon>v1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Defter.resx">
+      <DependentUpon>Defter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DışarıdakiKitaplar.resx">
+      <DependentUpon>DışarıdakiKitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitap Rapor.resx">
+      <DependentUpon>Kitap Rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapAlışVeriş.resx">
+      <DependentUpon>KitapAlışVeriş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitaplar.resx">
+      <DependentUpon>Kitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kişi Rapor.resx">
+      <DependentUpon>Kişi Rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menü.resx">
+      <DependentUpon>Menü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mevcut Kitaplar.resx">
+      <DependentUpon>Mevcut Kitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Rapor.resx">
+      <DependentUpon>Rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SifrenimiUnuttun.resx">
+      <DependentUpon>SifrenimiUnuttun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UyeKayit.resx">
+      <DependentUpon>UyeKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uyeler.resx">
+      <DependentUpon>Uyeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="v1.resx">
+      <DependentUpon>v1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.Config" />
+    <None Include="KutuphaneDataSet.xsc">
+      <DependentUpon>KutuphaneDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneDataSet.xss">
+      <DependentUpon>KutuphaneDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet1.xsc">
+      <DependentUpon>KutuphaneDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneDataSet1.xss">
+      <DependentUpon>KutuphaneDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet10.xsc">
+      <DependentUpon>KutuphaneDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneDataSet10.xss">
+      <DependentUpon>KutuphaneDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet11.xsc">
+      <DependentUpon>KutuphaneDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneDataSet11.xss">
+      <DependentUpon>KutuphaneDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet2.xsc">
+      <DependentUpon>KutuphaneDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneDataSet2.xss">
+      <DependentUpon>KutuphaneDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet3.xsc">
+      <DependentUpon>KutuphaneDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneDataSet3.xss">
+      <DependentUpon>KutuphaneDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet4.xsc">
+      <DependentUpon>KutuphaneDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneDataSet4.xss">
+      <DependentUpon>KutuphaneDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet5.xsc">
+      <DependentUpon>KutuphaneDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneDataSet5.xss">
+      <DependentUpon>KutuphaneDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet6.xsc">
+      <DependentUpon>KutuphaneDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneDataSet6.xss">
+      <DependentUpon>KutuphaneDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet7.xsc">
+      <DependentUpon>KutuphaneDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneDataSet7.xss">
+      <DependentUpon>KutuphaneDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet8.xsc">
+      <DependentUpon>KutuphaneDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneDataSet8.xss">
+      <DependentUpon>KutuphaneDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet9.xsc">
+      <DependentUpon>KutuphaneDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="KutuphaneDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KutuphaneDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KutuphaneDataSet9.xss">
+      <DependentUpon>KutuphaneDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

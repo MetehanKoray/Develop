@@ -9,9 +9,24 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i <=20; i++)
+            int a, b, c;
+            Console.WriteLine("1.sayı ");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("2.sayı ");
+            b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("3.sayı ");
+            c = Convert.ToInt32(Console.ReadLine());
+            if (a>b && a>c)
             {
-                Console.WriteLine(i);
+                Console.WriteLine("1.sayı büyük");
+            }
+            else if (b > a && b > c)
+            {
+                Console.WriteLine("2.sayı büyük");
+            }
+            else
+            {
+                Console.WriteLine("3.sayı büyük");
             }
             Console.ReadLine();
         }

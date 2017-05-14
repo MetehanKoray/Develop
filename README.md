@@ -1,1 +1,0 @@
-# DevelopBu Benim İlk Raporum
